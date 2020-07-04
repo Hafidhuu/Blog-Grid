@@ -2,87 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -92,17 +12,7 @@ video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
@@ -110,24 +20,20 @@ body {
   line-height: 1;
 }
 
-ol,
-ul {
+ol, ul {
   list-style: none;
 }
 
-blockquote,
-q {
+blockquote, q {
   quotes: none;
 }
 
-blockquote:before,
-blockquote:after {
+blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-q:before,
-q:after {
+q:before, q:after {
   content: "";
   content: none;
 }
@@ -146,26 +52,55 @@ table {
   flex-shrink: 1;
   flex-basis: calc(100% / 3 - 20px);
 }
-.article__img,
-.article__bg {
+.article__img {
   max-width: 100%;
 }
-.article__absolute {
+.article__box {
+  padding: 20px;
+}
+.article__h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  height: 143px;
+  margin-bottom: 23px;
+  overflow: hidden;
+}
+.article__date {
+  margin-bottom: 10px;
+}
+.article__author {
+  height: 50px;
+  border-radius: 25px;
+}
+.article:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.article-big {
+  background-color: #fff;
+  height: 531px;
+  margin: 10px;
+  position: relative;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: calc(100% / 1.5 - 20px);
+}
+.article-big__bg {
+  max-width: 100%;
+}
+.article-big__absolute {
   position: absolute;
   bottom: 40px;
   left: 40px;
   right: 40px;
 }
-.article__h3 {
+.article-big__h2 {
   font-size: 30px;
   color: white;
 }
-.article__date {
+.article-big__date {
   color: white;
   margin-bottom: 20px;
-}
-.article--big {
-  flex-basis: calc(100% / 1.5 - 20px);
 }
 
 body {
