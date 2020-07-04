@@ -1,4 +1,4 @@
-.article {
+.articles {
   background-color: #fff;
   height: 531px;
   margin: 10px;
@@ -6,6 +6,7 @@
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: calc(100% / 3 - 20px);
+  display: flex;
 
   &__img,
   &__bg {
@@ -43,8 +44,7 @@
   &__date. {
     color: black;
   }
-  &__absolutes {
-  }
+
   display: flex;
   justify-content: space-between;
   align-items: center;
