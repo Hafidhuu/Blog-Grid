@@ -1,12 +1,7 @@
 @import "_reset.scss";
 @import "_article.scss";
+@import "_articles.scss";
 
 body {
   background-color: #e2e7ec;
-}
-.articles {
-  width: 1120px;
-  margin: 90px auto;
-  display: flex;
-  flex-wrap: wrap;
 }

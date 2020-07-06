@@ -1,4 +1,4 @@
-.articles {
+.article {
   background-color: #fff;
   height: 531px;
   margin: 10px;
@@ -7,6 +7,10 @@
   flex-shrink: 1;
   flex-basis: calc(100% / 3 - 20px);
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 
   &__img,
   &__bg {
@@ -30,23 +34,29 @@
     margin-bottom: 20px;
   }
 
-  &__big {
+  &--big {
     flex-basis: calc(100% / 1.5 - 20px);
   }
-  &__small {
-    width: 350px;
-    height: 150px;
+  &--small {
+    flex-basis: calc(100% / 3 - 20px);
   }
-  &__h3. {
-    font-size: 30px;
-    color: black;
+  &__h2 {
+    font-size: 15px;
+    height: 115px;
+    padding-top: 30px;
   }
-  &__date. {
-    color: black;
+  &__dt {
+    padding-top: 50px;
   }
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
+  &--footer {
+    display: flex;
+    padding-left: 500px;
+    font-size: 10px;
+    text-align: center;
+    padding-top: 20px;
+  }
+  &__h6 {
+    padding-top: 20px;
+    padding-left: 10px;
+  }
 }
